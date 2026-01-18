@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Footer from "@/components/Footer.jsx";
+import Link from "next/link"
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
 
         {/* Mobile Hamburger Nav */}
         <div className="md:hidden bg-[#007CBF] text-white px-6 py-3 flex justify-between items-center">
-          <span className="font-semibold text-lg">Menu</span>
+          <Link href="/DownloadPrinterDrivers" className="font-semibold text-lg cursor-pointer">Printer Setup</Link>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>

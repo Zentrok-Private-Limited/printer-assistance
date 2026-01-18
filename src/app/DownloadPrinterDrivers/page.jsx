@@ -8,22 +8,26 @@ import { useRouter } from "next/navigation";
 function DownloadPrinterDrivers() {
 
   const [isOpen, setIsOpen] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
+  const [stage, setStage] = useState(null);
   const router = useRouter();
 
   const handleInstallClick = () => {
-    setShowPopup(true);
+    setStage("downloading");
 
     setTimeout(() => {
-      setShowPopup(false);
-      router.push("/DriverInstallation"); 
-    }, 15000);
+      setStage("installing");
+    }, 8000);
+
+    setTimeout(() => {
+      setStage(null);
+      router.push("/DriverInstallation");
+    }, 16000);
   };
 
   return (
     <div className="relative">
 
-      {showPopup && (
+      {stage && (
         <div className="fixed inset-0 bg-black/70 flex flex-col items-center justify-center z-50">
           <div className="bg-white rounded-xl p-8 shadow-xl flex flex-col items-center">
             <Image
@@ -33,17 +37,33 @@ function DownloadPrinterDrivers() {
               height={80}
               className="mb-4"
             />
-            <p className="text-lg font-light text-gray-700">
-              Installing HP Smart... Please wait
+            <p className="text-lg font-light text-gray-700 mb-2">
+              {stage === "downloading"
+                ? "Downloading HP Driver..."
+                : "Installing HP Smart..."}
             </p>
-            <div className="w-64 mt-4 bg-gray-200 rounded-full h-2 overflow-hidden">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 15, ease: "linear" }}
-                className="h-2 bg-[#080880]"
-              ></motion.div>
-            </div>
+
+            {stage === "downloading" && (
+              <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden mt-4">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 8, ease: "linear" }}
+                  className="h-2 bg-blue-600"
+                />
+              </div>
+            )}
+
+            {stage === "installing" && (
+              <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden mt-4">
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 8, ease: "linear" }}
+                  className="h-2 bg-[#080880]"
+                />
+              </div>
+            )}
           </div>
         </div>
       )}
