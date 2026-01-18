@@ -146,7 +146,7 @@ function PrinterSetup() {
             </h2>
 
             <div className="flex flex-col gap-6">
-                <p>At Smart  Device Assistant , we have an experienced team who can guide you on printer troubleshooting and provide you with instant support to fix some common challenges that you face while working or connecting your printer with an internet connection, laptop, computer, mobile, and other devices.</p>
+                <p>At printerassistance.com , we have an experienced team who can guide you on printer troubleshooting and provide you with instant support to fix some common challenges that you face while working or connecting your printer with an internet connection, laptop, computer, mobile, and other devices.</p>
                 <p>If you want to resolve your query within a few minutes and want professional help for free, you can send us a message to start a conversation with our experts or drop your query to get the best solution.</p>
                 <p>Moreover, if you have just bought a brand new Printer from the market, regardless of its type and size, we ensure to address all your problems without any hassle.</p>
             </div>

@@ -72,11 +72,11 @@ function Disclaimer() {
       <div className="mt-6 px-3">
         <ol className="flex flex-col gap-3 list-decimal list-inside lg:text-lg mt-5">
           <p>
-            Welcome to printerdriverssupport.com The information provided on this website is intended to offer users helpful, step-by-step guides for setting up printers and troubleshooting common printing issues. Please read the following disclaimer carefully:
+            Welcome to printerassistance.com The information provided on this website is intended to offer users helpful, step-by-step guides for setting up printers and troubleshooting common printing issues. Please read the following disclaimer carefully:
           </p>
               <li className="font-semibold">No Affiliation with Printer Manufacturers</li>
               <ul className="list-none list-inside px-4">
-                <li>printerdriverssupport is an independent, third-party resource for printer setup guides. We are not affiliated with, endorsed by, or officially partnered with any printer manufacturers (such as HP, Canon, Epson, etc.). The brand names, logos, and trademarks mentioned on our website are the property of their respective owners.</li>
+                <li>printerassistance.com is an independent, third-party resource for printer setup guides. We are not affiliated with, endorsed by, or officially partnered with any printer manufacturers (such as HP, Canon, Epson, etc.). The brand names, logos, and trademarks mentioned on our website are the property of their respective owners.</li>
               </ul>
 
               <li className="font-semibold">Accuracy of Information</li>
