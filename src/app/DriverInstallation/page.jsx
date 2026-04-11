@@ -57,7 +57,7 @@ export default function DriverInstallation() {
       </div>
 
       {/* Blue Slanted Footer Overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-32 pointer-events-none">
+      <div className="hidden md:flex absolute bottom-0 left-0 w-full h-32 pointer-events-none">
         <div 
           className="absolute bottom-0 left-0 w-full h-full bg-[#007DBA]" 
           style={{ clipPath: 'polygon(0 0%, 100% 100%, 0 100%)' }}
