@@ -6,32 +6,36 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 function DownloadPrinterDrivers() {
-
   const [isOpen, setIsOpen] = useState(false);
+  const [productName, setProductName] = useState("");
   const [stage, setStage] = useState(null);
   const router = useRouter();
 
   const handleInstallClick = () => {
-    setStage("downloading");
+  if (!productName.trim()) {
+    alert("Please enter a product name");
+    return;
+  }
 
-    setTimeout(() => {
-      setStage("installing");
-    }, 8000);
+  setStage("downloading");
 
-    setTimeout(() => {
-      setStage(null);
-      router.push("/DriverInstallation");
-    }, 16000);
-  };
+  setTimeout(() => {
+    setStage("installing");
+  }, 8000);
+
+  setTimeout(() => {
+    setStage(null);
+    router.push("/DriverInstallation");
+  }, 16000);
+};
 
   return (
     <div className="relative">
-
       {stage && (
         <div className="fixed inset-0 bg-black/70 flex flex-col items-center justify-center z-50">
           <div className="bg-white rounded-xl p-8 shadow-xl flex flex-col items-center">
             <Image
-              src="/loading.gif" 
+              src="/loading.gif"
               alt="loading"
               width={80}
               height={80}
@@ -67,7 +71,6 @@ function DownloadPrinterDrivers() {
           </div>
         </div>
       )}
-
 
       <div className="h-screen w-full">
         <nav className="hidden md:hidden lg:flex h-[10%] items-center px-15">
@@ -138,12 +141,22 @@ function DownloadPrinterDrivers() {
             <div className="w-full md:w-full flex flex-col md:flex-row lg:flex-row gap-4">
               <input
                 type="text"
-                className="w-full md:w-1/2 lg:w-4/5 border border-black/20 bg-white px-4 py-2 rounded-xl md:text-lg"
+                value={productName}
+                onChange={(e) => setProductName(e.target.value)}
+                className="w-full md:w-1/2 lg:w-4/5 bg-white px-4 py-2 rounded-xl md:text-lg"
                 placeholder='Enter your product name here. Example:"ENVY 4520"'
               />
-              <a className="px-4 py-2 w-18 bg-black text-white rounded-xl md:text-lg" onClick={handleInstallClick} href="#">
+              <button
+                onClick={handleInstallClick}
+                disabled={!productName.trim()}
+                className={`px-4 py-2 w-18 rounded-xl md:text-lg ${
+                  productName.trim()
+                    ? "bg-black text-white"
+                    : "bg-gray-400 text-gray-200 cursor-not-allowed"
+                }`}
+              >
                 Next
-              </a>
+              </button>
             </div>
             <div className="pt-3">
               <p className="text-white text-base md:text-lg md:py-2 lg:text-lg underline px-2">
