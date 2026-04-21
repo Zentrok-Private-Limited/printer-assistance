@@ -1,5 +1,5 @@
 import React from "react";
-
+import Footer from "@/components/Footer";
 
 
 export default function DriverInstallation() {
@@ -260,6 +260,7 @@ export default function DriverInstallation() {
         </div>
 
       </div>
+      <Footer/>
 
     </div>
 
