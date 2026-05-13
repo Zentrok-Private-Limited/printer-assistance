@@ -19,19 +19,29 @@ const quicksand = Quicksand({
 });
 
 export const metadata = {
-  title: "Printer Assistance - Printer Driver Support",
+  metadataBase: new URL("https://www.printerassistance.com/"),
+
+  title: {
+    default: "Printer Assistance | Printer Setup & Driver Support",
+    template: "%s | Printer Assistance",
+  },
+
   description:
-    "Get help with printer setup, driver installation, WiFi connection, and troubleshooting.",
+    "Get expert help for printer setup, driver installation, WiFi connection issues, offline errors, and troubleshooting for HP, Canon, Epson, and Brother printers.",
+
   keywords: [
-    "printer support",
     "printer assistance",
-    "printer driver download",
+    "printer setup support",
     "printer driver installation",
-    "printer setup",
-    "hp printer setup",
-    "canon printer help",
-    "printer driver installation",
+    "HP printer support",
+    "Canon printer setup",
+    "Brother printer troubleshooting",
+    "Epson printer help",
   ],
+
+  alternates: {
+    canonical: "https://www.printerassistance.com/",
+  },
 };
 
 export default function RootLayout({ children }) {
