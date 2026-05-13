@@ -133,6 +133,8 @@ function PrivacyPolicy() {
 
       </div>
 
+      
+
       <Footer />
     </div>
   );

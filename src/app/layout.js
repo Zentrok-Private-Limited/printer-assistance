@@ -19,8 +19,19 @@ const quicksand = Quicksand({
 });
 
 export const metadata = {
-  title: "Printer Assistance",
-  description: "printer-assistance",
+  title: "Printer Assistance - Printer Driver Support",
+  description:
+    "Get help with printer setup, driver installation, WiFi connection, and troubleshooting.",
+  keywords: [
+    "printer support",
+    "printer assistance",
+    "printer driver download",
+    "printer driver installation",
+    "printer setup",
+    "hp printer setup",
+    "canon printer help",
+    "printer driver installation",
+  ],
 };
 
 export default function RootLayout({ children }) {
