@@ -11,11 +11,11 @@ function Disclaimer() {
 
   return (
     <div>
-      <div className="relative max-h-screen w-full">
+      {/* <div className="relative max-h-screen w-full">
         <a href="/DownloadPrinterDrivers">
           <Image src="/hero-img.jpg" height={100} width={1500} alt="logo" />
         </a>
-      </div>
+      </div> */}
 
       <div className="w-full z-10 relative bg-white">
         <nav className="hidden bg-[#007CBF] text-white h-15 md:flex lg:flex items-center px-6">
