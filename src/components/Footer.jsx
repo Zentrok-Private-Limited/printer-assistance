@@ -99,8 +99,7 @@ function Footer() {
           <div>
             <h2 className="text-white font-semibold mb-3">Contact</h2>
             <ul className="space-y-2 text-gray-400">
-              <li>E-mail: info.digismartexpert@gmail.com</li>
-              <li>Phone: +91 788-746-8967</li>
+              <li>E-mail: contact@printerassistance.com</li>
             </ul>
             <div className="mt-4 flex space-x-3">
               <a href="#" aria-label="Facebook" className="hover:text-white">

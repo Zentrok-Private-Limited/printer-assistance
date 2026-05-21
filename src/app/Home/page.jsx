@@ -135,7 +135,7 @@ const LandingPage = () => {
           <input
             type="text"
             placeholder="Search for printers, ink, cartridges..."
-            className="flex-grow px-4 py-2 outline-none bg-transparent text-sm"
+            className="grow px-4 py-2 outline-none bg-transparent text-sm"
           />
 
           <button className="bg-[#004aad] px-5 flex items-center justify-center text-white">
@@ -146,14 +146,14 @@ const LandingPage = () => {
         {/* Right Side */}
         <div className="flex items-center gap-6">
           
-          {/* Phone */}
+          {/* Mail */}
           <div className="hidden lg:flex flex-col text-right">
             <span className="text-[10px] text-gray-400 font-bold uppercase">
-              Call Us Now
+              Contact Us
             </span>
 
             <span className="text-sm font-bold text-[#004aad]">
-              +91-877-230-1112
+              contact@printerassistance.com
             </span>
           </div>
 
@@ -264,7 +264,7 @@ const LandingPage = () => {
     </header>
 
       {/* Banner / Promotion */}
-      <div className="w-full h-[400px] bg-gradient-to-r from-blue-100 to-blue-50 flex items-center">
+      <div className="w-full h-[400px] bg-linear-to-r from-blue-100 to-blue-50 flex items-center">
         <div className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <span className="bg-red-500 text-white px-3 py-1 text-xs font-bold rounded mb-4 inline-block">
@@ -466,8 +466,7 @@ const LandingPage = () => {
           <div>
             <h2 className="text-white font-semibold mb-3">Contact</h2>
             <ul className="space-y-2 text-gray-400">
-              <li>E-mail: info.printerassistance@gmail.com</li>
-              <li>Phone: +91-877-230-1112</li>
+              <li>E-mail: contact@printerassistance.com</li>
             </ul>
             <div className="mt-4 flex space-x-3">
               <a href="#" aria-label="Facebook" className="hover:text-white">

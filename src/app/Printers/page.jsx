@@ -137,14 +137,14 @@ export default function PrinterStore() {
         {/* Right Side */}
         <div className="flex items-center gap-6">
           
-          {/* Phone */}
+          {/* Mail */}
           <div className="hidden lg:flex flex-col text-right">
             <span className="text-[10px] text-gray-400 font-bold uppercase">
-              Call Us Now
+              Contact Us
             </span>
 
             <span className="text-sm font-bold text-[#004aad]">
-              +91-877-230-1112
+              contact@printerassistance.com
             </span>
           </div>
 
@@ -288,7 +288,7 @@ export default function PrinterStore() {
                 </div>
 
                 {/* Content Section */}
-                <div className="p-5 flex-grow flex flex-col">
+                <div className="p-5 grow flex flex-col">
                   <div className="flex items-center gap-1 mb-2">
                     {[...Array(5)].map((_, i) => (
                       <Star
@@ -437,8 +437,7 @@ export default function PrinterStore() {
           <div>
             <h2 className="text-white font-semibold mb-3">Contact</h2>
             <ul className="space-y-2 text-gray-400">
-              <li>E-mail: info.printerassistance@gmail.com</li>
-              <li>Phone: +91-877-230-1112</li>
+              <li>E-mail: contact@printerassistance.com</li>
             </ul>
             <div className="mt-4 flex space-x-3">
               <a href="#" aria-label="Facebook" className="hover:text-white">
