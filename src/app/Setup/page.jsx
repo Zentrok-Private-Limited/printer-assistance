@@ -25,6 +25,7 @@ export default function Home() {
             <li><a href="/PrinterSetup">Printer Setup</a></li>
             <li><a href="/ScannerSetUp">Scanner Setup</a></li>
             <li><a href="/PrivacyPolicy">Privacy Policy</a></li>
+            <li><a href="/RefundPolicy">Refund Policy</a></li>
             <li><a href="/Disclaimer">Disclaimer</a></li>
 					</ul>
         </nav>
@@ -64,6 +65,12 @@ export default function Home() {
               className="block hover:text-gray-200"
             >
               Privacy Policy
+            </a>
+            <a
+              href="/RefundPolicy"
+              className="block hover:text-gray-200"
+            >
+              Refund Policy
             </a>
             <a
               href="/Disclaimer"
