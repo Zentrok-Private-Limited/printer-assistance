@@ -40,6 +40,11 @@ function FixOfflinePrinter() {
               </a>
             </li>
             <li>
+              <a href="/RefundPolicy">
+                Refund Policy
+              </a>
+            </li>
+            <li>
               <a href="/Disclaimer">
                 Disclaimer
               </a>
@@ -81,6 +86,12 @@ function FixOfflinePrinter() {
               className="block hover:text-gray-200"
             >
               Privacy Policy
+            </a>
+            <a
+              href="/RefundPolicy"
+              className="block hover:text-gray-200"
+            >
+              Refund Policy
             </a>
             <a
               href="/ScannerSetUp"

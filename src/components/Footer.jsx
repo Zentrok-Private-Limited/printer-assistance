@@ -81,6 +81,14 @@ function Footer() {
               </li>
               <li>
                 <a
+                  href="/RefundPolicy"
+                  className="hover:text-white transition"
+                >
+                  Refund Policy
+                </a>
+              </li>
+              <li>
+                <a
                   href="/PrivacyPolicy"
                   className="hover:text-white transition"
                 >

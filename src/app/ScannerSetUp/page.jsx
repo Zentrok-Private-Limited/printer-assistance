@@ -32,6 +32,9 @@ function ScannerSetUp() {
               <a href="/PrivacyPolicy">Privacy Policy</a>
             </li>
             <li>
+              <a href="/RefundPolicy">Refund Policy</a>
+            </li>
+            <li>
               <a href="/Disclaimer">Disclaimer</a>
             </li>
           </ul>
@@ -59,6 +62,9 @@ function ScannerSetUp() {
             </a>
             <a href="/PrivacyPolicy" className="block hover:text-gray-200">
               Privacy Policy
+            </a>
+            <a href="/RefundPolicy" className="block hover:text-gray-200">
+              Refund Policy
             </a>
             <a href="/Disclaimer" className="block hover:text-gray-200">
               Disclaimer
