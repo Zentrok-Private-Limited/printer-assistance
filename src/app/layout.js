@@ -22,7 +22,7 @@ export const metadata = {
   metadataBase: new URL("https://www.printerassistance.com/"),
 
   title: {
-    default: "Printer Assistance | Printer Setup & Driver Support",
+    default: "Printer Setup",
     template: "%s | Printer Assistance",
   },
 

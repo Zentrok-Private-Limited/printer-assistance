@@ -72,11 +72,11 @@ export default function DriverInstallation() {
           </p>
         </div>
 
-        {/* Replace with your HP Logo SVG or Image */}
+        {/* Replace with your HP Logo SVG or Image
 
         <div className="w-16 h-16 bg-[#007DBA] rounded-full flex items-center justify-center text-white font-bold text-3xl italic">
           <img src="/hp-icon.png" alt="hp-icon" />
-        </div>
+        </div> */}
       </div>
 
       {/* Main Content Card */}
@@ -141,7 +141,7 @@ export default function DriverInstallation() {
       <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-40 mx-10">
         <div className="bg-[#007DBA] p-6 text-white text-center">
           <h3 className="text-xl font-bold">
-            How to Fix HP Printer Installation Errors
+            How to Fix Printer Installation Errors
           </h3>
           <p className="text-blue-100 text-sm mt-1">
             Follow these steps carefully to resolve permission and connectivity
@@ -237,7 +237,7 @@ export default function DriverInstallation() {
                 Always install the latest and correct driver version.
               </p>
               <ul className="text-gray-600 text-sm list-disc ml-10 space-y-1 pt-3">
-                <li>Visit the official website of HP Inc.</li>
+                <li>Visit the official website of your printer</li>
                 <li>Search your printer model</li>
                 <li>Download the recommended driver for your system</li>
               </ul>

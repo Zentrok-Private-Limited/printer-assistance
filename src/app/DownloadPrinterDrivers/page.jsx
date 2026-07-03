@@ -43,8 +43,8 @@ function DownloadPrinterDrivers() {
             />
             <p className="text-lg font-light text-gray-700 mb-2">
               {stage === "downloading"
-                ? "Downloading HP Driver..."
-                : "Installing HP Smart..."}
+                ? "Downloading Driver..."
+                : "Installing Driver..."}
             </p>
 
             {stage === "downloading" && (
