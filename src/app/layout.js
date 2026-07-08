@@ -22,7 +22,7 @@ export const metadata = {
   metadataBase: new URL("https://www.printerassistance.com/"),
 
   title: {
-    default: "Printer Setup",
+    default: "24/7 Support  | Contact Suppor",
     template: "%s | Printer Assistance",
   },
 
@@ -55,20 +55,24 @@ export default function RootLayout({ children }) {
       <head>
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18172777248"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16526856628"
         />
         <Script id="google-ads-tag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-18172777248');
+            gtag('config', 'AW-16526856628');
           `}
         </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} antialiased`}
       >
+        <Script
+          src="//code.jivosite.com/widget/EJqXgVTtZ9" 
+          strategy="afterInteractive"
+        />
         <CartProvider>
         {children}
         </CartProvider>
