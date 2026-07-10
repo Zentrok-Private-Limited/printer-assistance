@@ -21,6 +21,13 @@ export default function DriverInstallation() {
     });
   };
 
+  const openChat = () => {
+    if (typeof window !== "undefined" && window.jivo_api) {
+      window.jivo_api.open();
+    }
+  };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -131,7 +138,7 @@ export default function DriverInstallation() {
 
           {/* Support Button */}
 
-          <button className="mt-8 bg-[#007DBA] hover:bg-[#006699] text-white text-lg py-2 px-10 rounded-lg transition-colors shadow-md">
+          <button onClick={openChat} className="mt-8 bg-[#007DBA] hover:bg-[#006699] text-white text-lg py-2 px-10 rounded-lg transition-colors shadow-md">
             Live Chat Support
           </button>
         </div>
